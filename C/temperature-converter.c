@@ -9,7 +9,7 @@ void convertCtoF()
     printf("Temperature in C: ");
     scanf("%d", &celsius);
     printf("\n");
-    int fahrenheit = (celsius * ((double)9/5)) + 32;
+    int fahrenheit = (celsius * ((double)9/5)) + 32; // Need to type cast the division expression.
     printf("Temperature in F: %d\n", fahrenheit);
 }
 
