@@ -12,6 +12,11 @@ app.use(aboutRoutes)
 app.use(contactRoutes)
 app.use(helpRoutes)
 
+app.all("*", (req,res)=>{
+  res.status(404).send("<h3>Page Not Found</h3>");
+
+})
+
 app.use(express.json());
 const port = process.env.PORT || 5000;
 ConnectDb();
